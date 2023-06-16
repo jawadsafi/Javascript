@@ -5,7 +5,19 @@
 
     <body>
 
-        <button onclick="alert('Hi')">Click Me</button>
+        <p id="text">I love Coding!</p>
+
+        <button id="mybutton">Change text</button>
+
+        <script type="text/javascript">
+
+            document.getElementById("mybutton").onclick = function() {
+
+                document.getElementById("text").innerHTML = "Me too!";
+            }
+
+
+        </script>
 
     </body>
 </html>
