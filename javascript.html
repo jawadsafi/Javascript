@@ -1,47 +1,69 @@
 <html>
     <head>
         <title>JavaScript</title>
+
+        <Style type="text/css">
+
+               .circle{
+
+                        margin:50px;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        float:left;
+                  }
+
+                #orange-circle {
+
+                    background-color: orange;
+                }
+
+                #blue-circle {
+
+
+                    background-color: blue;
+                    
+                }
+
+                #purple-circle {
+
+                    background-color: purple;
+                   
+                }
+
+                
+        </Style>
     </head>
 
     <body>
 
-        <p id="text">I love Coding!</p>
+       <div class="circle" id="orange-circle"></div>
 
-        <button id="mybutton">Change text</button>
+       <div class="circle" id="blue-circle"></div>
 
-        <p id="2paragraph">Javascript is ...</p>
+       <div class="circle" id="purple-circle"></div>
 
-        <button id="2button">Click me</button>
-
-        <p id="styling">Can you style me?</p>
-
-        <button id="stylingtext">styleText</button>
-
-        <p id="Notext"></p>
-
-        <button id="NotextButton">Create text</button>
-
+       
         <script type="text/javascript">
 
-            document.getElementById("mybutton").onclick = function() {
+           document.getElementById("orange-circle").onclick = function () {
 
-                document.getElementById("text").innerHTML = "Me too!";
+                document.getElementById("orange-circle").style.display = "none";
+           }
+
+           document.getElementById("blue-circle").onclick = function () {
+
+             document.getElementById("blue-circle").style.display = "none";
             }
 
-            document.getElementById("2button").onclick = function() {
+            document.getElementById("purple-circle").onclick = function () {
 
-                document.getElementById("2paragraph").innerHTML =  document.getElementById("2paragraph").innerHTML + "awesome";
-            }
+document.getElementById("purple-circle").style.display = "none";
+}
 
-            document.getElementById("NotextButton").onclick = function () {
 
-                document.getElementById("Notext").innerHTML = "Wow! you are learning javasrcipt";
-            }
 
-            document.getElementById("stylingtext").onclick = function () {
 
-                document.getElementById("styling").style.color = "blue";
-            }
 
 
         </script>
