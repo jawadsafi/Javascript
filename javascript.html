@@ -13,6 +13,10 @@
 
         <button id="2button">Click me</button>
 
+        <p id="styling">Can you style me?</p>
+
+        <button id="stylingtext">styleText</button>
+
         <p id="Notext"></p>
 
         <button id="NotextButton">Create text</button>
@@ -32,6 +36,11 @@
             document.getElementById("NotextButton").onclick = function () {
 
                 document.getElementById("Notext").innerHTML = "Wow! you are learning javasrcipt";
+            }
+
+            document.getElementById("stylingtext").onclick = function () {
+
+                document.getElementById("styling").style.color = "blue";
             }
 
 
