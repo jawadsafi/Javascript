@@ -2,69 +2,26 @@
     <head>
         <title>JavaScript</title>
 
-        <Style type="text/css">
-
-               .circle{
-
-                        margin:50px;
-                        width: 200px;
-                        height: 200px;
-                        border-radius: 50%;
-                        float:left;
-                  }
-
-                #orange-circle {
-
-                    background-color: orange;
-                }
-
-                #blue-circle {
-
-
-                    background-color: blue;
-                    
-                }
-
-                #purple-circle {
-
-                    background-color: purple;
-                   
-                }
-
-                
-        </Style>
     </head>
 
     <body>
 
-       <div class="circle" id="orange-circle"></div>
+      <input id="in" type="text">
 
-       <div class="circle" id="blue-circle"></div>
+      <button id="bu">Change the text</button>
 
-       <div class="circle" id="purple-circle"></div>
+      <p id="ja">Javascript is cool!</p>
 
        
         <script type="text/javascript">
 
-           document.getElementById("orange-circle").onclick = function () {
+            document.getElementById("bu").onclick = function() {
 
-                document.getElementById("orange-circle").style.display = "none";
-           }
-
-           document.getElementById("blue-circle").onclick = function () {
-
-             document.getElementById("blue-circle").style.display = "none";
+                var entered = " ";
+                entered = document.getElementById("in").value;
+                document.getElementById("ja").innerHTML = entered;
             }
-
-            document.getElementById("purple-circle").onclick = function () {
-
-document.getElementById("purple-circle").style.display = "none";
-}
-
-
-
-
-
+          
 
         </script>
 
