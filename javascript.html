@@ -6,23 +6,24 @@
 
     <body>
 
-      <input id="in" type="text">
-
-      <button id="bu">Change the text</button>
-
-      <p id="ja">Javascript is cool!</p>
-
+      
        
         <script type="text/javascript">
 
-            document.getElementById("bu").onclick = function() {
+            var myArray = new Array();
 
-                var entered = " ";
-                entered = document.getElementById("in").value;
-                document.getElementById("ja").innerHTML = entered;
-            }
-          
+            myArray[0] = "Virginia";
+           
+            myArray[1] = "New York";
 
+           var text = ["good morning" , "how are you?"];
+
+           text.push("I am tired")
+
+           alert(text[1]);
+
+           console.log(text);
+           text.splice(1 , 1);
         </script>
 
     </body>
