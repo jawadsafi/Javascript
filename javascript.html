@@ -5,19 +5,19 @@
     </head>
 
     <body>
-        <p>what is the magic word</p>
-        <input id="magicword">
+        <p>how many fingers I am holding?</p>
+        <input id="guessnum">
 
-        <button id="bu">submit</button>
+        <button id="but">Guess</button>
       
        
         <script type="text/javascript">
 
-          document.getElementById("bu").onclick = function(){
+          document.getElementById("but").onclick = function(){
 
-                var magicword = document.getElementById("magicword").value;
+                var magicword = document.getElementById("guessnum").value;
 
-                var magic = "magic"
+                var magic = Math.floor(Math.random() * 6);
 
                 if (magicword == magic) {
 
