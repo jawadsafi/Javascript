@@ -5,26 +5,32 @@
     </head>
 
     <body>
+        <p>what is the magic word</p>
+        <input id="magicword">
 
+        <button id="bu">submit</button>
       
        
         <script type="text/javascript">
 
-            var myArray = new Array();
+          document.getElementById("bu").onclick = function(){
 
-            myArray[0] = "Virginia";
-           
-            myArray[1] = "New York";
+                var magicword = document.getElementById("magicword").value;
 
-           var text = ["good morning" , "how are you?"];
+                var magic = "magic"
 
-           text.push("I am tired")
+                if (magicword == magic) {
 
-           alert(text[1]);
+                    alert("hurray, you got it right!")
+                }
 
-           console.log(text);
-           text.splice(1 , 2);
+                else {
+
+                    alert("opps, try again!")
+                }
+            }
         </script>
 
     </body>
+
 </html>
