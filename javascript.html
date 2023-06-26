@@ -6,16 +6,20 @@
 
     <body>
        
-      
+       <div id="text"></div>
        
         <script type="text/javascript">
+
+            var textString = "";
 
             var text = ["Hello world!", "Coding is fun!", "I love Javascript"];
 
             for (var i = 0; i < text.length; i++) {
 
-                alert(text[i]);
+                textString = textString + "<p>" + text[i] + "</p>";
             }
+
+            document.getElementById("text").innerHTML = textString;
         
         </script>
 
