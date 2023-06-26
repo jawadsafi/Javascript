@@ -5,30 +5,18 @@
     </head>
 
     <body>
-        <p>how many fingers I am holding?</p>
-        <input id="guessnum">
-
-        <button id="but">Guess</button>
+       
       
        
         <script type="text/javascript">
 
-          document.getElementById("but").onclick = function(){
+            var text = ["Hello world!", "Coding is fun!", "I love Javascript"];
 
-                var magicword = document.getElementById("guessnum").value;
+            for (var i = 0; i < text.length; i++) {
 
-                var magic = Math.floor(Math.random() * 6);
-
-                if (magicword == magic) {
-
-                    alert("hurray, you got it right!")
-                }
-
-                else {
-
-                    alert("opps, try again! The number was " + magic)
-                }
+                alert(text[i]);
             }
+        
         </script>
 
     </body>
