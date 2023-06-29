@@ -6,21 +6,46 @@
 
     <body>
        
-       <div id="text"></div>
+       <p>How many fingers are you holding up?</p>
+
+       <select type="text" id="num">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+       </select>
+
+       <button id="guess">Guess</button>
        
         <script type="text/javascript">
 
-            var textString = "";
+            document.getElementById("guess").onclick = function () {
 
-            var text = ["Hello world!", "Coding is fun!", "I love Javascript"];
+                var num = document.getElementById("num").value;
+                
+                var got = false;
 
-            for (var i = 0; i < text.length; i++) {
+                var numOfGuess = 1;
 
-                textString = textString + "<p>" + text[i] + "</p>";
+                while (got == false) {
+
+                    var guess = Math.floor(Math.random()*6);
+
+                    if (guess == num) {
+
+                        got = true;
+                        alert("Got it! The number is " + guess + ". It took you " + numOfGuess + " guesses.")
+                    }
+
+                    else {
+                     
+                        numOfGuess++;
+                    }
+                }
             }
 
-            document.getElementById("text").innerHTML = textString;
-        
         </script>
 
     </body>
